@@ -1,0 +1,67 @@
+/* stylelint-disable */
+.bio {
+    position: fixed;
+    width: calc(100% - 188px);
+    background-color:#fff;
+    height: 62px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .price{
+        display: flex;
+        align-items: center;
+        border-left: 2px solid #e3e3e3;
+        border-right: 2px solid #e3e3e3;
+        padding:0 18px;
+
+        .price-dollar {
+            align-items: center;
+            padding: 6px;
+            font-size: 20px;
+            color: #9c9c9c;
+            font-family: 'Roboto';
+
+        }
+
+        .cash{
+            width: 30px;
+        }
+    }
+    .bell-wrraper {
+        display: flex;
+        align-items: center;
+        padding: 0 18px;
+        border-right: 2px solid #e3e3e3;
+        .bell {
+            width: 30px;
+        }
+    }
+    .exit-wrraper {
+        display: flex;
+        align-items: center;
+        padding: 0 18px;
+        .exit {
+            width: 25px;
+        }
+    }
+    .bio-link {
+        display: flex;
+        align-items: center;
+        padding: 0 18px;
+        font-size: 13px;
+        font-family: 'Roboto';
+        color: #56819f;
+        text-decoration: none;
+        border-right: 2px solid #e3e3e3;
+        .man {
+            width: 30px;
+            margin-right: 15px;
+            border-radius: 50%;
+            border: 1px solid #e3e3e3;
+            padding: 5px;
+            height: 30px;
+        }
+    }
+}
