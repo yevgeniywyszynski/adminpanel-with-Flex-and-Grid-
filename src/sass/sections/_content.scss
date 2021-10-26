@@ -22,7 +22,7 @@
 
 .header-static {
     font-size: 16px;
-    font-family: 'Robot';
+    font-family: 'Roboto';
     color: #a6a6a6;
     padding-left: 186px;
     padding-top: 74px;
@@ -62,9 +62,13 @@
         border: none;
         margin-right: 40px;
         height: 40px;
-        width: 140px;
+        padding-left: 17px;
+        padding-right: 17px;
         border-radius: 5px;
         color: #a6a6a6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &::before{
             content: "";
@@ -72,21 +76,48 @@
             border-radius: 50%;
             width: 17px;
             height: 17px;
-            display: inline-block;
+            margin-right: 15px;
+            
         }
     }
     .btn-two {
         border: none;
         margin-right: 40px;
         height: 40px;
-        width: 90px;
+        padding-left: 17px;
+        padding-right: 17px;
         border-radius: 5px;
         color: #a6a6a6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+
+        &::before{
+            content: "";
+            background-color: #ff9a38;
+            border-radius: 50%;
+            width: 17px;
+            height: 17px;
+            margin-right: 15px;
+        }
     }
     .btn-three {
         border: none;
         background-color: #FFFFFF;
         color: #56819F;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before{
+            content: "";
+            background-color: #59b66d;
+            border-radius: 50%;
+            width: 17px;
+            height: 17px;
+            margin-right: 15px;
+        }
     }
 }
 .button-wrraper-add {
@@ -168,22 +199,52 @@
 /* links */
 
 .link-wrraper {
-    display: flex;
-    justify-content: center;
+    width: 684px;
+    margin: 0 auto;
     .links {
         list-style-type:none;
+        padding-left: 0;
         .subtitle-link {
             font-size: 16px;
             font-family: 'Roboto';
             color: #a6a6a6;
             border-bottom: 1px solid #e3e3e3;
-            padding-top: 25px;
-            padding-bottom: 25px;
+            padding: 25px 14px;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .link {
+                padding-left: 15px;
+            }
+
+            .trash {
+                position: absolute;
+                display: none;
+                top: 22px;
+                right: 25px;
+                width: 15px;
+                height: 15px;
+            }
+
+            .links-icon {
+                position: absolute;
+                display: none;
+                top: 22px;
+                right: 48px;
+                width: 20px;
+                height: 20px;
+            }
         }
-        .trash {
-            width: 15px;
-            height: 15px;
-            margin-left: 170px;
+
+        .subtitle-link:hover .trash {
+            display: block;
+        }
+        .subtitle-link:hover .links-icon {
+            display: block;
+        }
+        .subtitle-link:hover {
+            background-color: #f1f3f3;
         }
     }
     .link {

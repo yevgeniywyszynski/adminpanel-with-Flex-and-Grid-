@@ -8,6 +8,7 @@
     right: 0;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
 
     .price{
         display: flex;
@@ -36,6 +37,16 @@
         border-right: 2px solid #e3e3e3;
         .bell {
             width: 30px;
+        }
+        .bell-circle {
+            background-color: #f58220;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            display: block;
+            position: relative;
+            top: -12px;
+            right: 13px;
         }
     }
     .exit-wrraper {
