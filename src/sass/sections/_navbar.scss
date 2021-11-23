@@ -6,6 +6,22 @@
     position: fixed;
     top: 0;
     left: 0;
+    .navbar-btn {
+        position: absolute;
+        right: -20px;
+        border: none;
+        background-color: red;
+        width: 20px;
+        height: 20px;
+
+    }
+} 
+
+.open {
+    left:0;
+}
+.close {
+    left: -188px;
 }
 
 @import '../components/navlist';
